@@ -1,10 +1,15 @@
 \\check weather a string is palindrome or not
-    for(i=0;i<=N/2;i++){
-            if(str[i]===str[N-1+i]){
-                console.log("No");
-                break;
-            }
-    else{
-                console.log("Yes");
-                break;
-    }
+    let s="naman"
+function reverse(string){
+let new_str="";
+    for(i=s.length-1;i<=0;i++){
+        new_str=string[i];  
+}
+return new_str;
+}
+let rev=reverse(s);
+if(s=rev){
+console.log(s,"is a palindromic string);
+}else{
+console.log("Not a panlindrome);
+}  
