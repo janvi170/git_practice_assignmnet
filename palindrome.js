@@ -1,15 +1,25 @@
-\\check weather a string is palindrome or not
-    let s="naman"
-function reverse(string){
-let new_str="";
-    for(i=s.length-1;i<=0;i++){
-        new_str=string[i];  
-}
-return new_str;
-}
-let rev=reverse(s);
-if(s=rev){
-console.log(s,"is a palindromic string);
-}else{
-console.log("Not a panlindrome);
+
+//check weather a string is palindrome or not
+
+function checkPalindrome(str) {  
+    
+    const len = str.length;  
+  
+   
+    for (let i = 0; i < len / 2; i++) {  
+      
+        if (str[i] !== str[len - 1 - i]) {  
+          console.log( 'It is not palindrome'); 
+          return;
+        }  
+    }  
+  
+    console.log( 'It is a palindrome');  
 }  
+  
+
+ 
+  
+const value = checkPalindrome('naman');  
+
+console.log(value);  
