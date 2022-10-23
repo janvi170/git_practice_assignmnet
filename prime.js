@@ -1,16 +1,26 @@
 //check weather a number is prime or not
-let count=0;
-    for(i=1;i<=50;i++){
-    
-    if(num%i===1){
-        count++;
-    }
-    }
-    if(count===1){
-        console.log("Yes");
+function checkPrime(n){
+  //let i=2
+  let flag=false
+  for(let i=2;i<n;i++){
+    if(n%i===0){
+    flag=true 
+      break
     }
     else{
-    console.log("No");
-    
-    
+      continue
+      
     }
+  }
+  if(flag){
+    console.log('Not Prime')
+  }
+    else if(n<2){
+      console.log('Not Prime')
+    }
+  else{
+    console.log('Prime')
+  }
+}
+
+checkPrime(17)
